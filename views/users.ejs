@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<div class="container">
+   
+        <% users.forEach(function(user){ %>
+            <div class="row">
+                <div class="col-sm-6">
+                    <%= user.name %>
+                </div>
+                <div class="col-sm-3">
+                    <%= user.state %>
+                </div>
+                <div class="col-sm-3">
+                    <%= user.city %>
+                </div>
+            </div>
+
+<% }); %>
+    
+</div>
